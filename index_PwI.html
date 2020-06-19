@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Painting with Images</title>
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1>Interactive Internet Art</h1>
+            <p>Projects Completed in Summer 2020</p>
+        </div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="index_CG.html">Circle Generator</a>
+            <a href="index_PwI.html" class="active">Painting with Images</a>
+            <a href="index_BO.html">Bouncing Objects</a>
+            <a href="#" class="right">Social Media Link</a>
+        </div>
+        <div class="row">
+            <div class="side clearfix">
+                <h2>Project Two</h2>
+                <p>Project Two is, essentially, a basic drawing program where the user can draw with three different images and increase the size of those images, as well as clear the canvas to start anew.</p>
+                <hr>
+            </div>
+            <div class="main clearfix">
+                <h2 style="text-align:center;">Painting with Images</h2>
+                <div id="myContainer"></div>
+
+                <!-- button time -->
+                <button type="button" value="0" onclick="changeImage(this.value)" class="button">
+                    <img src="img/flower0.png" width="50px" height="50px">
+                </button>
+                <button type="button" value="1" onclick="changeImage(this.value)" class="button">
+                    <img src="img/flower1.png" width="50px" height="50px">
+                </button>
+                <button type="button" value="2" onclick="changeImage(this.value)" class="button">
+                    <img src="img/flower2.png" width="50px" height="50px">
+                </button>
+                
+                <!-- spacing -->
+                <p> </p>
+                
+                <!-- button to change size -->
+                <button type="button" onclick="upSize()" class="buttonsetting">
+                    +
+                </button>
+                <span id="sizeDimension"></span>
+                <button type="button" onclick="downSize()" class="buttonsetting">
+                    -
+                </button>
+                
+                <!-- button for canvas clear -->
+                <button type="button" onclick="clrCanvas()" class="buttonsetting">
+                    Clear Canvas
+                </button>
+                
+                <!-- work on values display tomorrow -->
+            </div>
+        </div>
+        <div class="footer">
+            <h5>Copyright &copy; 2020 Carmen Joachimsmeyer-Gordon</h5>
+        </div>
+        <script src="js/p5.js"></script>
+        <script src="js/app_PwI.js"></script>
+        <script src="js/app_PwI_display.js"></script>
+    </body>
+</html>
